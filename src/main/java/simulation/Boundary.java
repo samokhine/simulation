@@ -1,5 +1,9 @@
 package simulation;
 
+/*
+ * The class represents 2D rectangular boundary.
+ * It can be extend to fit a given point or to be centered around a given point 
+ */
 public class Boundary {
 	private int minX, maxX, minY, maxY;
 
@@ -10,7 +14,7 @@ public class Boundary {
 		maxY = coordinate.getY();
 	}
 
-	public Boundary(int minX, int maxX, int minY, int maxY) {
+	private Boundary(int minX, int maxX, int minY, int maxY) {
 		this.minX = minX;
 		this.maxX = maxX;
 		this.minY = minY;

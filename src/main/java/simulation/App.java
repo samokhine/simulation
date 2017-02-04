@@ -9,12 +9,15 @@ public class App {
 			return;
 		}
 		
-        File fieldFile = new File(args[0]);
+		// create the space/cuboid from the field file
+		File fieldFile = new File(args[0]);
 		Space space = new Space(fieldFile);
 
+		// create the strategy from the instructions file
         File instructionsFile = new File(args[1]);
         Strategy strategy = new Strategy(instructionsFile);
         
+        // run the strategy
         strategy.run(space);
 	}
 }
