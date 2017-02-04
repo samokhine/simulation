@@ -1,0 +1,8 @@
+south
+east
+beta west
+north
+west
+north
+west
+delta
